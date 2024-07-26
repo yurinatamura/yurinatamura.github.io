@@ -1,0 +1,447 @@
+:root {
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--background-color);
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+a{
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+/* Navbar */
+
+nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+
+   padding: 0 50px; 
+   height: 80px;
+}
+
+nav .left a { 
+    color: var(--text-color);
+    font-size: 22px;
+    font-weight: 600;
+}
+
+nav .right a {
+    color: var(--text-color);
+    margin: 0 10px;
+}
+
+nav .right a:last-child {
+    color: var(--background-color);
+    background-color: var(--text-color);
+    padding: 5px 15px;
+    border-radius: 5px;
+}
+
+nav .right a span {
+    margin-left: 5px;
+}
+
+/* Section 1 intro */ 
+
+.Intro-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.Intro-section .text {
+    flex: 5;
+}
+
+.Intro-section .text h2 {
+    font-size: 45px;
+}
+
+.Intro-section .text .links {
+    margin-top: 25px;
+}
+
+.Intro-section .text .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .2s;
+}
+
+.Intro-section .text .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.Intro-section .memoji{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.Intro-section .memoji img {
+    width: 350px;
+    border-radius: 50%;
+}
+
+/*Section 2 Experience */ 
+
+.experience-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.experience-section h2 {
+    text-align: center; 
+    font-size: 35px;
+}
+
+.experience-section .text {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.experience-section .links {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.experience-section .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .2s;
+}
+
+.experience-section .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+.activity-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    margin: 50px 0;
+    margin-bottom: 100px;
+    gap: 40px;
+}
+
+.activity-section .text {
+    flex: 5;
+}
+
+.activity-section .text h2 {
+    font-size: 30px;
+    padding: 5px 0px;
+}
+
+.activity-section .text h3 {
+    font-size: 20px;
+    padding: 5px 0px;
+}
+
+.activity-section .text .website {
+    margin-top: 25px;
+}
+
+.activity-section .logo{
+    flex: 2;
+    display: flex;
+    justify-content: right;
+}
+
+.activity-section .logo img {
+    width: 300px;
+    border-radius: 50%;
+}
+
+
+/*Section 3 Play */ 
+.play-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.play-section h2 {
+    text-align: center; 
+    font-size: 35px;
+}
+
+.play-section .text {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.play-section .links {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.play-section .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: .2s;
+}
+
+.play-section .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+/*Section 4 About */ 
+.about-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.about-section h2 {
+    text-align: center; 
+    font-size: 35px;
+}
+
+.about-section .text {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.about-section .links {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.about-section .links a {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 2px solid var(--link-color);
+    border-radius: 5px;
+    margin-right: 10px;
+    margin-bottom: 0;
+    transition: .2s;
+}
+
+.about-section .links a:hover {
+    color: var(--text-color);
+    border: 2px solid var(--text-color);
+}
+
+/*.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2 {
+    font-size: 25px;
+}
+
+.contact-section .group {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.contact-section .group form {
+
+    flex: 1;
+    width: 100%;
+    max-width: 640px;
+    display: flex;
+    justify-content: center;
+}
+
+.contact-section {
+    padding: 0 50px;
+    margin-bottom: 100px;
+}
+
+.contact-section h2 {
+    font-size: 25px;
+}
+
+.contact-section .group {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.contact-section .group .text {
+    flex: 1;
+    margin-top: 20px;
+}
+
+.contact-section .group .text {
+    flex: 3;
+    margin-top: 20px;
+}
+
+.contact-section .group form {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-section .group form input, 
+.contact-section .group form textarea {
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid var(--link-color);
+    background-color: transparent;
+    padding: 10px;
+    margin-bottom: 15px;
+    outline: none;
+    resize: none;
+}
+
+.contact-section .group form button {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    background-color: var(--link-color);
+    border: none;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.contact-section .group form :hover{
+    filter: brightness(0.9);
+} */
+
+@media(max-width: 850px) {
+/*Section 1 */ 
+    .Intro-section .text h2 {
+        font-size: 35px;
+    }
+
+/*Internships*/
+
+    .activity-section .text h2 {
+        font-size: 35px;
+    }
+
+    .activity-section .text h3 {
+        font-size: 25px;
+    }
+}
+
+@media(max-width: 740px) {
+    /*Section 1 */ 
+        .Intro-section{
+            flex-direction: column-reverse;
+        }
+        .Intro-section .memoji img {
+            width: 300px;
+        }
+
+        .activity-section{
+            flex-direction: column-reverse;
+        }
+        .activity-section .logo img {
+            width: 300px;
+        }
+
+    /*Section 4*/ 
+    .contact-section .group {
+        flex-direction: column;
+    }
+    }
+
+@media(max-width: 630px) {
+    nav {
+        padding: 0 20px;
+    }
+
+    nav .right a {
+        font-size: 22px;
+    }
+
+    nav .right a:last-child{
+        color: var(--text-color);
+        background-color: transparent;
+        padding: 0;
+    }
+
+    nav .right a span {
+        display: none;
+    }
+
+    /*Section 1 Intro */
+    .Intro-section {
+        padding: 0 20px;
+    }
+
+    .Intro-section .text h2 {
+        font-size: 30px;
+    }
+
+    /*Internships*/
+
+    .activity-section {
+        padding: 0 20px;
+    }
+
+    .activity-section .text h2 {
+        font-size: 30px;
+    }
+
+    .activity-section .text h3 {
+        font-size: 20px;
+    }
+
+    /*Section 2*/ 
+    .experience-section { 
+        padding: 0 20px;
+    }
+
+    /*Section 3*/ 
+    .play-section { 
+        padding: 0 20px;
+    }
+
+    /*Section 4*/ 
+    .about-section { 
+        padding: 0 20px;
+    }
+
+    /*Section 4*/
+    .contact-section {
+        padding: 0 20px;
+    }
+
+}
